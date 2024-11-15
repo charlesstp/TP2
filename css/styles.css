@@ -1,0 +1,108 @@
+#conteneur {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    height: 100%;
+
+    grid-template-areas: 
+    "header header  header  header"
+    "main   main    main    aside"
+    "footer footer footer   footer";
+}
+
+#header {
+    grid-area: header;
+    background-color: black;
+    color: white;
+    height: fit-content;
+}
+
+#nav {
+    height: 75px;
+}
+
+#main {
+    grid-area: main;
+    height: 650px;
+}
+
+#aside {
+    grid-area: aside;
+    background-color: rgb(19, 185, 240);
+}
+
+#asideWow {
+    grid-area: aside;
+    background-color: rgb(246, 199, 46);
+}
+
+#figure {
+    background-color: white;
+    width: fit-content;
+    border: solid black 1px;
+    padding: 10px;
+    margin: 13px;
+    float: left;
+}
+
+#article {
+    padding-left: 10px;
+}
+
+#footer {
+    grid-area: footer;
+    background-color: gray;
+    height: 75px;
+}
+
+/*lien déjà visité*/
+a:visited {
+    color: white;
+}
+
+/*lien non visité*/
+a:link {
+    color: white;
+}
+
+a:hover {
+    color: blue;
+}
+
+
+.lienNavGauche {
+    padding: 8px;
+    float: left;
+}
+
+.lienNavDroit {
+    padding: 8px;
+    float: right;
+}
+
+#image {
+    max-width: 350px;
+    height: 300px;
+    margin: auto;
+}
+
+#imageKB2 {
+    max-width: 1000px;
+    height: 100px;
+    margin: auto;
+}
+
+.styleTexte {
+    font-size: 110%;
+    padding: 10px;
+}
+
+#alignDroite {
+    text-align: right;
+    margin: 0px;
+}
+
+#alignGauche {
+    text-align: left;
+    padding: 15px;
+}
